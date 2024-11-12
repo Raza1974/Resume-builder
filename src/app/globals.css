@@ -2,127 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css */
+
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 20px;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.form-section, .resume-section {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  width: 90%;
   max-width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-h1, h2 {
-  color: #2c3e50;
-  margin-top: 20px;
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
 }
 
-input, textarea {
+input[type="text"], input[type="email"], input[type="file"], textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  background-color: rgb(224, 225, 236);
+  font-size: 2rem;
 }
 
 button {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #4ca7af;
+  color: white;
   border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   border-radius: 4px;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #45a049;
 }
 
-.resume-preview {
-  margin-top: 30px;
-  border-top: 2px solid #ddd;
-  padding-top: 20px;
-}
-
-.experience-entry, .education-entry {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-}
-
-.color-picker {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.color-picker label {
-  display: flex;
-  align-items: center;
-}
-
-.color-picker input[type="color"] {
-  width: 50px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-#profile-picture {
-  margin-bottom: 15px;
-}
-
-/* Resume Preview Styles */
-#preview-content {
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
-  padding: 20px;
-  border: 1px solid #ddd;
+.resume {
+  background-color: white;
+  padding: 1.5rem;
   border-radius: 8px;
+  color: #2196f3; ;
 }
 
-#preview-content h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.resume h2 {
+  color: #2196f3;
+  border-bottom: 2px solid #2196f3;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-#preview-content h2 {
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-bottom: 2px solid;
-  padding-bottom: 5px;
-}
-
-#preview-content p {
-  margin-bottom: 10px;
-}
-
-.profile-picture-preview {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+.profile-image {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.resume-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.resume-section h4 {
+  color: #4CAF50;
+  margin-top: 1rem;
 }
 
-.resume-header-content {
-  margin-left: 20px;
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+#downloadBtn {
+  background-color: #2196f3;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
 }
