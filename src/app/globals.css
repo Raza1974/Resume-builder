@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.resume-preview {
+  margin-top: 30px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.experience-entry, .education-entry {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.color-picker label {
+  display: flex;
+  align-items: center;
+}
+
+.color-picker input[type="color"] {
+  width: 50px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#profile-picture {
+  margin-bottom: 15px;
+}
+
+/* Resume Preview Styles */
+#preview-content {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#preview-content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#preview-content h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+
+#preview-content p {
+  margin-bottom: 10px;
+}
+
+.profile-picture-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resume-header-content {
+  margin-left: 20px;
+}
